@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Usecontext from "./UseContext/Usecontext";
+import UseReducerWithString from "./UseReducer/UseReducer";
+import UseReducerWithComplexState from "./UseReducer/UseReducerWithComplexState";
+
+// export const LastName = React.createContext();
+// export const FirstName = React.createContext();/**code for use context */
+// export const OtherDetails = React.createContext();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <UseReducerWithString /> */}
+      <UseReducerWithComplexState />
     </div>
   );
 }
 
 export default App;
+
+/**
+ * TODO: USE CONTEXT
+ *   @returnCode
+ *    <FirstName.Provider value={"santhosh"}>
+      <LastName.Provider value={"veluru"}>
+        <OtherDetails.Provider
+          value={{ age: 25, sex: "male", country: "India" }}
+        >
+          <Usecontext />
+        </OtherDetails.Provider>
+      </LastName.Provider>
+    </FirstName.Provider>
+ * 
+ */

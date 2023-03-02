@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import Usecontext from "./UseContext/Usecontext";
+import FetchingUsingUseReducerPart1 from "./UseReducer/FetchingUsingUseReducer";
+import FetchingUsingUseReducerPart2 from "./UseReducer/FetchingUsingUseReducerPart2";
 import UseReducerWithString from "./UseReducer/UseReducer";
 import UseReducerWithComplexState from "./UseReducer/UseReducerWithComplexState";
 
@@ -12,7 +14,7 @@ function App() {
   return (
     <div>
       {/* <UseReducerWithString /> */}
-      <UseReducerWithComplexState />
+      <FetchingUsingUseReducerPart2 />
     </div>
   );
 }

@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
+import UseDocumentTitle from "./CustomHooks/useDocumentTitle";
 import Usecontext from "./UseContext/Usecontext";
+import UseMemoIntro from "./UseMemo/UseMemoIntro";
 import FetchingUsingUseReducerPart1 from "./UseReducer/FetchingUsingUseReducer";
 import FetchingUsingUseReducerPart2 from "./UseReducer/FetchingUsingUseReducerPart2";
 import UseReducerWithString from "./UseReducer/UseReducer";
 import UseReducerWithComplexState from "./UseReducer/UseReducerWithComplexState";
+import UseRef1 from "./UseRef/UseRef1";
+import UseRef2, { UseRef2Class } from "./UseRef/UseRef2";
 
 // export const LastName = React.createContext();
 // export const FirstName = React.createContext();/**code for use context */
@@ -12,9 +16,8 @@ import UseReducerWithComplexState from "./UseReducer/UseReducerWithComplexState"
 
 function App() {
   return (
-    <div>
-      {/* <UseReducerWithString /> */}
-      <FetchingUsingUseReducerPart2 />
+    <div className="d-flex flex-row justify-content-center">
+      <UseDocumentTitle />
     </div>
   );
 }
@@ -35,3 +38,12 @@ export default App;
     </FirstName.Provider>
  * 
  */
+
+// ! useReducer Hook
+// {/* <UseReducerWithString />
+// <FetchingUsingUseReducerPart2 /> */}
+
+// ! useRef
+// {/* <UseMemoIntro /> */}
+// {/* <UseRef2Class />
+// <UseRef2 /> */}

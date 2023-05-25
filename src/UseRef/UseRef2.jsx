@@ -37,7 +37,7 @@ function UseRef2() {
   //     const interval = setInterval(() => {
   //       setTimer((prev) => prev + 1);
   //     }, 1000);
-  //     // clean up funtion
+  // clean up funtion
   //     return () => {
   //       clearInterval(interval);
   //     };

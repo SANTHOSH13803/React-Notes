@@ -22,3 +22,5 @@
 
 // TODO : const callbackFuntion = useCallback(()=>{...black of code which depends on state A}, [A])
 // The component that depends on state only re-renders not a the other components
+
+// Every time when the component re-renders the funtion will be called again.
